@@ -1,0 +1,64 @@
+services:
+  backend:
+    container_name: go_scaffold_backend
+    image: go_scaffold_image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true   # Mantener el stdin abierto para interactuar con el contenedor
+    tty: true
+    ports:
+      - "4000:8080"
+    volumes:
+      - ./:/app
+    environment:
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=go_scaffold_db
+      - JWT_SECRET=1a9a625f3fb02333920c32b0b23baca6cd9860fbcde198dddba5053b
+      - CORS_ORIGINS=http://localhost:3000
+    networks:
+      - go-scaffold-backend
+    command: >
+  #      bash -c 'go run ./cmd/api --jwt-secret=$JWT_SECRET --cors-trusted-origins="http://localhost:3000"'
+
+  postgres:
+    container_name: go_scaffold_postgres
+    image: postgres:16
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=go_scaffold_db
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - go-scaffold-backend
+
+  pgadmin:
+    container_name: go_scaffold_pgadmin
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    networks:
+      - go-scaffold-backend
+
+networks:
+  go-scaffold-backend:
+    driver: bridge
+
+volumes:
+  db-data:
+    driver: local
+  pgadmin-data:
+    driver: local
