@@ -2,9 +2,9 @@ package routes
 
 import (
 	"github.com/go-chi/chi/v5"
-	"go-react-backend.iserranodev.net/infrastructure/handler"
-	"go-react-backend.iserranodev.net/infrastructure/middleware"
-	"go-react-backend.iserranodev.net/internal/service"
+	"go-scaffold.iserranodev.net/infrastructure/handler"
+	"go-scaffold.iserranodev.net/infrastructure/middleware"
+	"go-scaffold.iserranodev.net/internal/service"
 	"os"
 )
 

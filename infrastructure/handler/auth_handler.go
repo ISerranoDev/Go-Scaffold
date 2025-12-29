@@ -2,10 +2,10 @@ package handler
 
 import (
 	"encoding/json"
-	"go-react-backend.iserranodev.net/internal/dto"
-	"go-react-backend.iserranodev.net/internal/helper"
-	"go-react-backend.iserranodev.net/internal/service"
-	"go-react-backend.iserranodev.net/internal/usecase"
+	"go-scaffold.iserranodev.net/internal/dto"
+	"go-scaffold.iserranodev.net/internal/helper"
+	"go-scaffold.iserranodev.net/internal/service"
+	"go-scaffold.iserranodev.net/internal/usecase"
 	"net/http"
 )
 

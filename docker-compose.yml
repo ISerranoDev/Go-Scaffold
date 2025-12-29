@@ -22,7 +22,7 @@ services:
     networks:
       - go-scaffold-backend
     command: >
-  #      bash -c 'go run ./cmd/api --jwt-secret=$JWT_SECRET --cors-trusted-origins="http://localhost:3000"'
+  #      bash -c 'go run ./cmd/web --jwt-secret=$JWT_SECRET --cors-trusted-origins="http://localhost:3000"'
 
   postgres:
     container_name: go_scaffold_postgres
