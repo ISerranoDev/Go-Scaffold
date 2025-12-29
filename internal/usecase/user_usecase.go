@@ -3,9 +3,9 @@ package usecase
 import (
 	"errors"
 	"fmt"
-	"go-react-backend.iserranodev.net/internal/domain"
-	"go-react-backend.iserranodev.net/internal/dto"
-	"go-react-backend.iserranodev.net/internal/helper"
+	"go-scaffold.iserranodev.net/internal/domain"
+	"go-scaffold.iserranodev.net/internal/dto"
+	"go-scaffold.iserranodev.net/internal/helper"
 )
 
 type UserUseCase struct {

@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"go-react-backend.iserranodev.net/internal/domain"
+	"go-scaffold.iserranodev.net/internal/domain"
 )
 
 type RoleUseCase struct {

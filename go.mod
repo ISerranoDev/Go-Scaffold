@@ -1,4 +1,4 @@
-module go-react-backend.iserranodev.net
+module go-scaffold.iserranodev.net
 
 go 1.25.5
 

@@ -1,7 +1,7 @@
 package db
 
 import (
-	"go-react-backend.iserranodev.net/internal/domain"
+	"go-scaffold.iserranodev.net/internal/domain"
 	"gorm.io/gorm"
 )
 

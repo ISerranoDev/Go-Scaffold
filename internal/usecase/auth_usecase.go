@@ -2,8 +2,8 @@ package usecase
 
 import (
 	"errors"
-	"go-react-backend.iserranodev.net/internal/domain"
-	"go-react-backend.iserranodev.net/internal/helper"
+	"go-scaffold.iserranodev.net/internal/domain"
+	"go-scaffold.iserranodev.net/internal/helper"
 )
 
 type AuthUseCase struct {

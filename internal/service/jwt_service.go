@@ -3,7 +3,7 @@ package service
 import (
 	"errors"
 	"github.com/golang-jwt/jwt/v5"
-	"go-react-backend.iserranodev.net/internal/domain"
+	"go-scaffold.iserranodev.net/internal/domain"
 	"time"
 )
 

@@ -1,6 +1,6 @@
 package dto
 
-import "go-react-backend.iserranodev.net/internal/domain"
+import "go-scaffold.iserranodev.net/internal/domain"
 
 type UpdateProfileRequest struct {
 	ID         string `json:"id"`

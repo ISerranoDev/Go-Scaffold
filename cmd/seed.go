@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"go-react-backend.iserranodev.net/infrastructure/db"
-	"go-react-backend.iserranodev.net/internal/domain"
-	"go-react-backend.iserranodev.net/internal/helper"
+	"go-scaffold.iserranodev.net/infrastructure/db"
+	"go-scaffold.iserranodev.net/internal/domain"
+	"go-scaffold.iserranodev.net/internal/helper"
 	"log"
 )
 

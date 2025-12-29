@@ -2,8 +2,8 @@ package middleware
 
 import (
 	"context"
-	"go-react-backend.iserranodev.net/internal/helper"
-	"go-react-backend.iserranodev.net/internal/service"
+	"go-scaffold.iserranodev.net/internal/helper"
+	"go-scaffold.iserranodev.net/internal/service"
 	"net/http"
 	"strings"
 )

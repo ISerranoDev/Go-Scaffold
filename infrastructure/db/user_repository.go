@@ -2,7 +2,7 @@ package db
 
 import (
 	"github.com/oklog/ulid/v2"
-	"go-react-backend.iserranodev.net/internal/domain"
+	"go-scaffold.iserranodev.net/internal/domain"
 	"gorm.io/gorm"
 	"math/rand"
 	"strings"
